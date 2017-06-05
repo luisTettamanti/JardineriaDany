@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+</head>
+
+<body>
+   <!--<div id="wrapper">-->
+        <form>
+            <fieldset>
+                <legend>Información de Contacto</legend>
+                <label>Nombre</label><br>
+                <input type="text" name="nombre" placeholder="Escriba aqui su nombre"><br>
+                <label>Dirección de mail</label><br>
+                <input type="email" name="email"><br>
+                <label>Web Corporativa</label><br>
+                <input type="url" name="web"><br>
+                <label>Teléfono</label><br>
+                <input type="tel" name="telefono"><br>
+                <label>Fecha</label><br>
+                <input type="date" name="fecha"><br>
+                <label>Hora</label><br>
+                <input type="time" name="hora"><br>
+                <label>Buscar</label><br>
+                <input type="search" name="buscar" autofocus><br>
+                <label>Acompañantes</label><br>
+                <input type="number" name="numero" min="2" max="10" step="2"><br>
+                <label>Volumen</label><br>
+                <input type="range" name="volumen" min="0" max="10" value="5"><br>
+                <label>Fondo</label><br>
+                <input type="color" name="color"><br>
+                <input type="image" href="Imagenes/Facebook.png" name="imagen" height="40" width="40"><br>
+                <label>Contraseña</label><br>
+                <input type="password" name="contrasena"><br>
+                <label>Donación</label><br>
+                <input type="text" name="donacion" list="donaciones">
+                <datalist id="donaciones">
+                    <option value="100">100</option>
+                    <option value="50">50</option>
+                    <option value="10">10</option>
+                </datalist><br>
+                <label>Tipo de Documento</label><br>
+                <select name="tipodoc">
+                    <option value="DNI">DNI</option>
+                    <option value="LC">LC</option>
+                    <option value="LE">LE</option>
+                    <option value="Pasaporte">Pasaporte</option>
+                </select><br>
+                <input type="radio" name="genero" value="Masculino">Masculino<br>
+                <input type="radio" name="genero" value="Femenino">Femenino<br>
+                <input type="radio" name="genero" value="Otros">Otros<br>
+                <input type="checkbox" name="futbol" value="futbol">Fútbol
+                <input type="checkbox" name="basquet" value="basquet">Básquet
+                <input type="checkbox" name="tenis" value="tenis">Tenis
+                <input type="checkbox" name="ajedrez" value="ajedrez">Ajedrez
+            </fieldset>
+            <br><input type="submit" name="Enviar"><br>
+            <button type="submit">Enviar</button> 
+        </form>
+    <!--</div>-->
+</body>
+
+
+</html>
+<link rel="stylesheet" href="paginaCSS.css">

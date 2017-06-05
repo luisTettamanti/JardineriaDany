@@ -1,0 +1,140 @@
+/* CSS para pagina.html */
+
+#wrapper {
+    background-image: url(Imagenes/grass.jpg);
+    background-repeat: repeat;
+    width: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+header {
+    height: 300px;
+    background-image: url(Imagenes/jardineria.jpg);
+    background-size: cover;
+}
+
+#titulo {
+    color: greenyellow;
+    font-size: 40px;
+    font-family: fantasy;
+    padding-top: 190px;
+    padding-left: 20px;
+}
+
+#titulo a:link {
+    text-decoration: none;
+    color: greenyellow;
+}
+
+#titulo a:visited {
+    text-decoration: none;
+    color: greenyellow;
+}
+
+#subtitulo {
+    color:white;
+    font-family: sans-serif;
+    padding-left: 20px;
+}
+
+nav {
+    color: white;
+    background-color: rgba(0,0,0,.7);
+    height: 30px;
+    line-height: 30px;
+}
+
+nav li {
+    text-decoration: none;
+    display: inline-block;
+    padding-right: 20px;
+}
+
+section {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: auto;
+    height: auto;
+    padding: 20px 20px 20px 20px;
+}
+
+article {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 200px;
+    color: white;
+    background-color: rgba(255,255,255,.7);
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*.fIzquierda img {
+    position: absolute;
+    height: 200px;
+    width: 180px;
+}*/
+
+.dDerecha {
+    margin-right: 10px;
+    margin-left: 190px;
+    margin-bottom: 10px;
+    position: absolute;
+    color: black;
+    font-family: sans-serif;
+    height: inherit;
+    overflow-y: hidden;
+}
+    
+/*.fDerecha img {
+    position: relative;
+    height: 200px;
+    width: 180px;
+    float: right;
+}*/
+
+.dIzquierda {
+    margin-right: 200px;
+    position: absolute;
+    color: black;
+    font-family: sans-serif;
+    overflow-y: hidden;
+    height: inherit;
+}
+
+footer {
+    height: 120px;
+    background-color: black;
+    position: relative;
+}
+
+#textoFooter {
+    color: white;
+    line-height: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 20px;
+    width: 60%;
+    min-width: 220px;
+    float: left;
+    font-family: sans-serif;
+}
+
+#redesFooter {
+    height: 120px;
+    width: calc(40% - 40px);
+    padding-right: 20px;
+    padding-top: 10px;
+    float: right;
+}
+
+#redesFooter img {
+    width: 50px;
+    height: 50px;
+    float: right;
+}
