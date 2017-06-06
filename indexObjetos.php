@@ -27,33 +27,28 @@
         </header>
         <section>
            <?php
-                $descripciones = array();
-                $fotos = array();
-                $estilo = array();
-
                 include_once "articulos.php";
-            
-                for ($i=0;$i<=count($fotos)-1;$i++)
+                foreach ($listaArticulos as $art)
                 {
                     echo '<article><form action="detalle.php" target="blank">';
-                    echo "<input type='hidden' name='indice' value=$i>";
-                    if ($estilo[$i]=='izq')
+                    echo "<input type='hidden' name='indice' value=$art->id>";
+                    if ($art->estilo=='izq')
                     {
                         echo '<div id="foto" class="fIzquierda">';
-                        echo '<div style="height:200px; width:180px; position:absolute; background-image: url( '.$fotos[$i].'); background-size:cover;"></div>';
+                        echo '<div style="height:200px; width:180px; position:absolute; background-image: url( '.$art->foto.'); background-size:cover;"></div>';
                         echo '</div>';
                         echo '<div id="descripcion" class="dDerecha">';
-                        echo "<p>$descripciones[$i]</p>";
+                        echo "<p>$art->descripcion</p>";
                         echo '<input type="submit" value="..."/>';
                         echo '</div>';
                     }
                     else
                     {
                         echo '<div id="foto" class="fDerecha">';
-                        echo '<div style="height:200px; width:180px; position:relative; background-image: url( '.$fotos[$i].'); background-size:cover; float:right"></div>';
+                        echo '<div style="height:200px; width:180px; position:relative; background-image: url( '.$art->foto.'); background-size:cover; float:right"></div>';
                         echo '</div>';
                         echo '<div id="descripcion" class="dIzquierda">';
-                        echo "<p>$descripciones[$i]</p>";
+                        echo "<p>$art->descripcion</p>";
                         echo '<input type="submit" value="..."/>';
                         echo '</div>';
                      }

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Información de Contacto</legend>
+            <p><label>Nombre<br><input type="text" name="nombre" required autofocus></label></p>
+            <p><label>Dirección de mail<br><input type="email" name="email" placeholder="mail"></label></p>
+            <p><label>Sitio web<br><input type="url" name="sitio" title="Eso no es una dirección!!!"></label></p>
+            <p><label>Número de teléfono<br><input type="tel" name="telefono"></label></p>
+            <p><label>Fecha de cita<br><input type="date" name="cita"></label></p>
+            <p><label>Hora de cita<br><input type="time" name="hora"</label></p>
+            <p><label>Acompañantes<br><input type="number" name="acompanantes"></label></p>
+            <p><label>Volumen<br><input type="range" name="volumen" min=0 max=10 step=0.5 value=5></label></p>
+            <p><label>Color de fondo<br><input type="color" name="fondo"></label></p>
+            <p><label><input type="image" name="imagen" src="Imagenes/Facebook.png" width="40" height="40"></label></p>
+            <p><label>Donación<br><input type="text" name="donacion" list="donaciones"></label></p>
+            <datalist id="donaciones">
+                <option value="100">100</option>
+                <option value="75">75</option>
+                <option value="25">25</option>
+            </datalist>
+            <p><label>Mi explorador es<br><select name="browsers">
+                <option value="Explorer">Explorer</option>
+                <option value="Chrome">Chrome</option>
+                <option value="Firefox">Firefox</option>
+                <option value="Opera">Opera</option>
+            </select>
+            </label></p>
+            <p><label>Password<br><input type="password" name="password"></label></p>
+            <p><input type="radio" name="genero" value="Masculino">Masculino
+            <input type="radio" name="genero" value="Femenino">Femenino
+            <input type="radio" name="genero" value="Otros">Otros</p>
+            <input type="checkbox" name="animal1" value="Perro">Perro
+            <input type="checkbox" name="animal2" value="Gato">Gato 
+         </fieldset>
+         <p><button type="submit">Enviar</button></p>
+    </form>
+</body>
+</html>
+<link rel="stylesheet" href="paginaCSS.css">
